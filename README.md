@@ -1,4 +1,4 @@
-# 🚀 QR Creator Pro Elite
+# QR Generator
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
@@ -38,7 +38,17 @@ Este proyecto va más allá de un simple generador. Permite una personalización
 
 ## 📸 Screenshots
 
+### 🏠 Inicio
+Muestra una interfaz limpia con el fondo degradado Aurora y acceso rápido al generador.
+<img src="./assets/screenshots/hero-section.png" alt="Pantalla de Inicio" width="800px">
 
+### 👥 Sobre Nosotros
+Explicación de los beneficios y pilares del proyecto: Rapidez, Personalización y Seguridad.
+<img src="./assets/screenshots/about-us.png" alt="Sección Nosotros" width="800px">
+
+### ⚙️ Generador Interactivo
+La herramienta principal con personalización de cuerpo, esquinas, colores y carga de logotipos en tiempo real.
+<img src="./assets/screenshots/editor-interface.png" alt="Interfaz del Generador" width="800px">
 
 ---
 
@@ -48,4 +58,4 @@ Si quieres clonar este proyecto y ejecutarlo en tu máquina, sigue estos pasos:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone [https://github.com/dev-softwaresystems/qr-generator.git](https://github.com/dev-softwaresystems/qr-generator.git)
+   git clone https://github.com/dev-softwaresystems/qr-generator.git
