@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #f3f4f6;
+  background: #171C1B;
+}
+
+/* Customized Gradient Background */
+.gradient-bg {
+  background: linear-gradient(135deg, #244C36, #171C1B, #1F2E27, #244C36, #1B4129, #181A1A, #244634);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar for better aesthetic */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #171C1B;
+}
+::-webkit-scrollbar-thumb {
+  background: #244C36;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1B4129;
+}
