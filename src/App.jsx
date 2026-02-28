@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import QRCodeStyling from "qr-code-styling";
 import { Download, Upload, Trash2, QrCode, Zap, Shield, CheckCircle2, ArrowRight } from "lucide-react";
 
-// Initial Configuration for QR Code Styler
+// Config inicial para el QR
 const qrCode = new QRCodeStyling({
   width: 320,
   height: 320,
@@ -153,12 +153,12 @@ export default function App() {
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">Nombre del Archivo</label>
-                  <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-white focus:ring-2 focus:ring-teal-500 outline-none transition" placeholder="Mi_Super_QR" />
+                  <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-white focus:ring-2 focus:ring-teal-500 outline-none transition" placeholder="Mi QR" />
                 </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-2">URL o Texto <span className="text-teal-400">*</span></label>
-                  <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} className="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-white focus:ring-2 focus:ring-teal-500 outline-none transition" placeholder="https://mi-enlace.com" />
+                  <input type="text" value={url} onChange={(e) => setUrl(e.target.value)} className="w-full bg-black/40 border border-white/10 rounded-xl p-3 text-white focus:ring-2 focus:ring-teal-500 outline-none transition" placeholder="https://qr-generator-delta-gold.vercel.app/" />
                 </div>
 
                 <div className="h-px bg-white/10 w-full my-6"></div>
@@ -244,7 +244,7 @@ export default function App() {
         <div className="flex justify-center items-center gap-2 mb-2">
           <QrCode className="text-teal-400/50" size={16} /> <span className="text-gray-400 tracking-wider">QR FORGE</span>
         </div>
-        <p>© {new Date().getFullYear()} Creado con ❤️ para ti. Todos los derechos reservados.</p>
+        <p>© {new Date().getFullYear()} Creado por Software Systems Dev. Todos los derechos reservados.</p>
       </footer>
     </div>
   );
