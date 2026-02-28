@@ -18,6 +18,7 @@ export default function App() {
   const [dotType, setDotType] = useState("square");
   const [cornerType, setCornerType] = useState("square");
   const [logo, setLogo] = useState(null);
+  const [transparentBg, setTransparentBg] = useState(true);
   const ref = useRef(null);
 
   useEffect(() => {
@@ -29,10 +30,10 @@ export default function App() {
       data: url,
       dotsOptions: { color: color, type: dotType },
       cornersSquareOptions: { type: cornerType, color: color },
-      backgroundOptions: { color: "transparent" }, // Transparent so it merges with the white container box
+      backgroundOptions: { color: transparentBg ? "transparent" : "#ffffff" },
       image: logo,
     });
-  }, [url, color, dotType, cornerType, logo]);
+  }, [url, color, dotType, cornerType, logo, transparentBg]);
 
   const onLogoChange = (e) => {
     const file = e.target.files[0];
@@ -162,6 +163,17 @@ export default function App() {
                 </div>
 
                 <div className="h-px bg-white/10 w-full my-6"></div>
+
+                <div className="flex items-center justify-between bg-black/30 border border-white/10 p-4 rounded-xl">
+                  <div>
+                    <h4 className="text-gray-300 font-medium">Fondo Transparente</h4>
+                    <p className="text-gray-500 text-xs mt-1">Descarga el QR sin el fondo blanco (PNG).</p>
+                  </div>
+                  <label className="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" checked={transparentBg} onChange={() => setTransparentBg(!transparentBg)} className="sr-only peer" />
+                    <div className="w-11 h-6 bg-gray-600 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-teal-500"></div>
+                  </label>
+                </div>
 
                 <div>
                   <label className="block text-sm font-medium text-gray-300 mb-3">Estilo del Cuerpo</label>
