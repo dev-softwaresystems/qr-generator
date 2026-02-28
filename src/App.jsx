@@ -12,8 +12,8 @@ const qrCode = new QRCodeStyling({
 });
 
 export default function App() {
-  const [url, setUrl] = useState("https://google.com");
-  const [name, setName] = useState("Mi_QR_Profesional");
+  const [url, setUrl] = useState("https://qr-generator-delta-gold.vercel.app/");
+  const [name, setName] = useState("Nombre de mi QR");
   const [color, setColor] = useState("#000000"); // Standard is black for light backgrounds, but here we render on a white padded square
   const [dotType, setDotType] = useState("square");
   const [cornerType, setCornerType] = useState("square");
