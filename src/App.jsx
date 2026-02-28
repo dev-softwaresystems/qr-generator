@@ -85,8 +85,11 @@ export default function App() {
               Con Estilo Único
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl font-light">
+          <p className="text-lg md:text-xl text-gray-300 mb-5 max-w-2xl font-light">
             Crea códigos profesionales para tu negocio o marca personal. Conecta a tu audiencia a tus enlaces, redes y más de manera espectacular.
+          </p>
+          <p className="text-s md:text-s text-gray-300 mb-5 max-w-2xl font-light">
+            Un producto de Software Systems.
           </p>
           <div className="flex gap-4 flex-col sm:flex-row">
             <button onClick={() => scrollToSection('generator')} className="bg-teal-500 hover:bg-teal-400 text-gray-900 font-bold px-8 py-4 rounded-full transition shadow-[0_0_30px_rgba(20,184,166,0.6)] flex items-center justify-center gap-2 group">
@@ -104,7 +107,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Por qué elegirnos</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Diseñada para ofrecerte la mejor experiencia al crear conectividad instantánea con un diseño impecable.</p>
+            <p className="text-gray-400 max-w-4xl mx-auto">En Software Systems creemos que la tecnología debe ser accesible para todos, por eso hemos creado QR Forge para ofrecerte la mejor experiencia al crear conectividad instantánea con un diseño impecable.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
